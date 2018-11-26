@@ -4,6 +4,7 @@ import { ListComponent } from './list/list.component';
 import { TeamRoutingModule } from './team.routing';
 import {CommonsModule} from '../commons/commons.module';
 import { DetailsComponent } from './details/details.component';
+import { TeamService } from '../services/team.service';
 
 @NgModule({
   declarations: [ListComponent, DetailsComponent],
@@ -11,6 +12,7 @@ import { DetailsComponent } from './details/details.component';
     CommonModule,
     TeamRoutingModule,
     CommonsModule
-  ]
+  ],
+  providers: [TeamService]
 })
 export class TeamModule { }
